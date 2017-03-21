@@ -64,8 +64,8 @@ UIView不能接受触摸事件的三种情况
     
 ```
 1. userInteractionEnabled = NO  //不接受用户交互
-2. hidden = YES   // 隐藏
-3. alpha = 0.0 ~ 0.01   //透明
+2. hidden = YES                 // 隐藏
+3. alpha = 0.0 ~ 0.01           //透明
 ```
 
 
