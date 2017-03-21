@@ -70,7 +70,7 @@ BOLCK和函数的相似性：可以保持代码, 有返回值, 有形参, 调用
 
 block
 ```
-//block如何写
+///block如何写
 block数据类型
 定义格式:
 返回值类型（^block变量名）(形参列表)＝^(形参列表){
@@ -88,7 +88,29 @@ typedef 返回值类型(^block类型名称)(形参列表)
 逻辑图:
 ![](http://upload-images.jianshu.io/upload_images/1899934-f8f4d1ca6e5f2d5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+实现代码:
+```
+B.H
+///声明一个block属性
+typedef void(^MyBlock) (NSString *);
 
+///定义一个block属性
+@property (copy ,nonatomic)MyBlock Block;
+
+@property (copy, nonatomic) NSString *name;
+
+B.M
+///在适当的时候调用Block
+    if (self.MyBlock) {
+        self.MyBlock(name);
+    }
+A.M
+///保存一个代码块
+/ / /获取B
+ B.MyBlock = ^(NSString *name){
+             ///值就有了
+        } ;
+```
 
 
 
