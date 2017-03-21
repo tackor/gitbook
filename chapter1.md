@@ -33,6 +33,37 @@
 
 实现代码:
 
+```
+B.H类  类名  name
+///声明代理方法
+@protocol  nameDelegate <NSObject>
+
+- (void)name:(B *)VC ;
+
+@end
+
+///定义代理属性
+@property (nonatomic, weak) id<nameDelegate> delegate;
+
+B.M
+///在合适的时候调用代理方法
+ if ([self.delegate respondsToSelector:@selector(a:)]) {
+        [self.delegate a:self];
+    }
+
+A.M
+///设置代理对象,获取B
+B *b = [[B alloc]init];
+
+b.delegate = self;
+
+///遵守代理协议
+@interface contactController ()<nameDelegate>
+
+///实现代理方法
+- (void)name:(B *)VC { }
+```
+
 
 
 
