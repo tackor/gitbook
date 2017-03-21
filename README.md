@@ -27,6 +27,8 @@
 4. app store 上的更新记录, 评论
 
 ###3. 目前iOS面试者现状 
+1. 买家市场, iOS 从事者过多.区分度非常低, 有些能力会的大家都会, 不会的大家都不会.
+
 ##补充
 
 <a href='http://www.jianshu.com/p/7728afc1cb82'>http://www.jianshu.com/p/7728afc1cb82</a>
