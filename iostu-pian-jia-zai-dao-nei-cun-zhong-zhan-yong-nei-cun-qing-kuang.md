@@ -4,3 +4,4 @@
 
 可以用工具Instruments 查看图片占用内存情况
 
+<a href='http://www.cnblogs.com/lishuming/p/5224618.html'>http://www.cnblogs.com/lishuming/p/5224618.html</a>
