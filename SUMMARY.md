@@ -25,4 +25,5 @@
 * 多线程
 * [属性readwrite，readonly，assign，retain，copy，nonatomic 各是什么作用，在那种情况下用?](shu-xing-readwrite-readonly-assign-retain-copy-nonatomic-ge-shi-shi-yao-zuo-yong-ff0c-zai-na-zhong-qing-kuang-xia-75283f.md)
 * [ARC下会存在内存泄漏吗?](arcxia-hui-cun-zai-nei-cun-xie-lou-54173f.md)
+* [什么情况下使用weak关键字, 相比于assign有什么不同](shi-yao-qing-kuang-xia-shi-yong-weak-guan-jian-5b572c-xiang-bi-yu-assign-you-shi-yao-bu-tong.md)
 
