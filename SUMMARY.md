@@ -5,4 +5,6 @@
 * [Delegate, Notification, KVO 各自的优缺点](delegate-notification-kvo-ge-zi-de-you-que-dian.md)
 * [事件传递&响应者链条](shi-jian-chuan-901226-xiang-ying-zhe-lian-tiao.md)
 * [iOS图片加载到内存中占用内存情况](iostu-pian-jia-zai-dao-nei-cun-zhong-zhan-yong-nei-cun-qing-kuang.md)
+* [内存泄漏](nei-cun-xie-lou.md)
+* [Assets.xcassets 和 直接用图片 的区别](assetsxcassets-he-zhi-jie-yong-tu-pian-you-shi-yao-bu-yi-yang.md)
 
