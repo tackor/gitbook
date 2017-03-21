@@ -75,7 +75,24 @@ UIView不能接受触摸事件的三种情况
     3.如果在自己身上,它会从后往前遍历子控件,遍历出每个子控件后,重复前 的两个步骤.
     4.如果没有符合条件的子控件,那么它自己就是最适合的View.
 
+寻找最适合的View的过程中涉及到两个方法`hitTest` & `PointInside`
 
+######hitTest方法
+```
+-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+```
+作用:         寻找最适合的View
+参数:         当前手指所在的点, 产生的事件
+返回值:       返回最适合的View
+什么时候调用:  只要一个控件接收到一个事件时, 就会调用这个控件的hitTest
+
+######PointInside方法
+```
+-(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
+```
+作用:          判断point在不在方法的调用者身上
+参数:          point必须是 方法调用者的坐标系 上在方法调用者范围内
+什么时候调用:    hitTest方法底层会调用该方法, 判断点是否在控件上
 
 
 <br />
