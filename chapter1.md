@@ -28,11 +28,9 @@
 ```
 
 逻辑图:
-
 ![](http://upload-images.jianshu.io/upload_images/1899934-20edac2be8773c3f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 实现代码:
-
 ```
 B.H类  类名  name
 ///声明代理方法
@@ -69,6 +67,26 @@ b.delegate = self;
 苹果推荐的类型，效率高，在运行中保存代码。用来封装和保存代码，有点像函数，BLOCK可以在任何时候执行。
 
 BOLCK和函数的相似性：可以保持代码, 有返回值, 有形参, 调用方式一样
+
+block
+```
+///block如何写
+block数据类型
+定义格式:
+返回值类型（^block变量名）(形参列表)＝^(形参列表){
+}
+
+调用block
+block变量名（实参）;
+默认情况下，Block内部不能修改外面局部变量
+Block内部可以修改使用__block修饰的局部变量
+
+使用typedef定义Block类型
+typedef 返回值类型(^block类型名称)(形参列表)
+```
+
+逻辑图:
+![](http://upload-images.jianshu.io/upload_images/1899934-f8f4d1ca6e5f2d5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
