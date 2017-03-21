@@ -39,4 +39,13 @@ UIApplication、UIViewController、UIView都继承 UIResponder 因此它们都�
 ###4.如何监听UIView的触摸事件? 
 想要监听UIViiew的触摸事件, 先第 步要 定义UIView, 因为只有实现了UIResponder的事件放法才能够监听事件.
 
-UIView的触摸事件主要有: 一根或者多根手指开始触摸view，系统会 动调 view的下  法. - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event 根或者多根 指在view上移动时，系统会 动调 view的下  法 (随着 指的移动，会持续调 该 法,也就是说这个 法会调 很多次)- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event 根或者多根 指离开view，系统会 动调 view的下  法- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+```
+UIView的触摸事件主要有: 一根或者多根手指开始触摸view，系统会自动调 view的下面方法. 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event 
+
+一根或者多根手指在view上移动时，系统会自动调 view的下面方法 (随着手指的移动，会持续调用该方法,也就是说这个方法会调用很多次)
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event 
+
+一根或者多根手指离开view，系统会自动调 view的下面方法
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+```
