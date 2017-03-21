@@ -112,6 +112,39 @@ B.MyBlock = ^(NSString *name){
 } ;
 ```
 
+###3. 通知传值
+
+一个完整的通知一般包含3个属性：
+```
+- (NSString*)name; // 通知的名称
+- (id)object; // 通知发布者(是谁要发布通知)
+- (NSDictionary*)userInfo; // 一些额外的信息(通知发布者传递给通知接收者的信息内容)
+```
+
+逻辑图:
+![](http://upload-images.jianshu.io/upload_images/1899934-5eb44ae79a88ba78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+实现代码:
+```
+///获取通知中心,点击按钮发送通知
+[[NSNotificationCenter defaultCenter] postNotificationName:@"noti" object:nil userInfo:@{@"key":name}];
+
+///获取通知中心,接收通知,调用方法
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(text:) name:@"noti" object:nil];
+
+///实现通知方法
+- (void)text:(NSNotification *)noti {
+///noti中的key,就可以取出值
+ NSString * name =  noti.userInfo[@"key"];
+}
+///在调用结束的时候,要移除通知
+- (void)dealloc {
+      //[super dealloc];  非ARC中需要调用此句
+
+      [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+```
+
 
 
 
