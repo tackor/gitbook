@@ -45,9 +45,9 @@ B.H类  类名  name
 
 B.M
 ///在合适的时候调用代理方法
- if ([self.delegate respondsToSelector:@selector(a:)]) {
-        [self.delegate a:self];
-    }
+if ([self.delegate respondsToSelector:@selector(a:)]) {
+    [self.delegate a:self];
+}
 
 A.M
 ///设置代理对象,获取B
@@ -101,15 +101,15 @@ typedef void(^MyBlock) (NSString *);
 
 B.M
 ///在适当的时候调用Block
-    if (self.MyBlock) {
-        self.MyBlock(name);
-    }
+if (self.MyBlock) {
+    self.MyBlock(name);
+}
 A.M
 ///保存一个代码块
 / / /获取B
- B.MyBlock = ^(NSString *name){
-             ///值就有了
-        } ;
+B.MyBlock = ^(NSString *name){
+    ///值就有了
+} ;
 ```
 
 
