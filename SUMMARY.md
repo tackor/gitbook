@@ -10,4 +10,5 @@
 * [\#include & \#import & @class](include4e0e23-import-de-qu-bie-300123-import-4e0e-class-de-qu-bie.md)
 * [isMemberOfClass & isKindOfClass 区别](ismemberofclass-and-iskindofclass-qu-bie.md)
 * [对象可以被copy的条件](dui-xiang-ke-yi-bei-copy-de-tiao-jian.md)
+* [堆 & 栈 等其他 iOS 五个区](dui-he-zhan-de-qu-bie.md)
 
