@@ -17,4 +17,6 @@
 * [深拷贝和浅拷贝](shen-kao-bei-he-qian-kao-bei.md)
 * [对沙盒的理解](dui-sha-he-de-li-jie.md)
 * [ViewController 的 loadView,、viewDidLoad,、viewDidUnload 分别是在什么时候调用的？](viewcontroller-de-loadview-viewdidload-viewdidunload-fen-bie-shi-zai-shi-yao-shi-hou-diao-yong-de-ff1f.md)
+* [frame和bounds有什么不同？](framehe-bounds-you-shi-yao-bu-tong-ff1f.md)
+* [UIViewController的完整生命周期](uiviewcontrollerde-wan-zheng-sheng-ming-zhou-qi.md)
 
