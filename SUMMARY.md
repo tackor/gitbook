@@ -24,4 +24,5 @@
 * [谓词](wei-ci.md)
 * 多线程
 * [属性readwrite，readonly，assign，retain，copy，nonatomic 各是什么作用，在那种情况下用?](shu-xing-readwrite-readonly-assign-retain-copy-nonatomic-ge-shi-shi-yao-zuo-yong-ff0c-zai-na-zhong-qing-kuang-xia-75283f.md)
+* [ARC下会存在内存泄漏吗?](arcxia-hui-cun-zai-nei-cun-xie-lou-54173f.md)
 
