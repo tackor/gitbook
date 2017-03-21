@@ -15,4 +15,5 @@
 * [TCP & UDP & HTTP & Socket](tcp-and-udp-and-http-and-socket.md)
 * [如何进行网络消息推送](ru-he-jin-xing-wang-luo-xiao-xi-tui-song.md)
 * [深拷贝和浅拷贝](shen-kao-bei-he-qian-kao-bei.md)
+* [对沙盒的理解](dui-sha-he-de-li-jie.md)
 
