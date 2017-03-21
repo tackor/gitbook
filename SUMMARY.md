@@ -19,4 +19,5 @@
 * [ViewController 的 loadView,、viewDidLoad,、viewDidUnload 分别是在什么时候调用的？](viewcontroller-de-loadview-viewdidload-viewdidunload-fen-bie-shi-zai-shi-yao-shi-hou-diao-yong-de-ff1f.md)
 * [frame和bounds有什么不同？](framehe-bounds-you-shi-yao-bu-tong-ff1f.md)
 * [UIViewController的完整生命周期](uiviewcontrollerde-wan-zheng-sheng-ming-zhou-qi.md)
+* [UIImageView添加圆角](uiimageviewtian-jia-yuan-jiao.md)
 
