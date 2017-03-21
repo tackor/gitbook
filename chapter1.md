@@ -6,7 +6,7 @@
 
 传入的对象,代替当前类完成了某一个功能,称为代理模式.
 
-代理的实现方法:
+代理的实现逻辑:
 ```
 //在要传值的类中
 
@@ -30,6 +30,9 @@
 逻辑图:
 
 ![](http://upload-images.jianshu.io/upload_images/1899934-20edac2be8773c3f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+实现代码:
+
 
 
 
