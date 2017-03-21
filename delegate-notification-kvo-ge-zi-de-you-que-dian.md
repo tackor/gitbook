@@ -5,8 +5,9 @@
 
 在iOS应用不断的出现三种模式来实现这种通信：
 
-    1.委托delegation
+    1.代理,委托 delegation
 
-    2.通知中心Notification Center
+    2.通知中心 Notification Center
 
-    3.键值观察key value observing，KVO
+    3.键值观察(key value observing) KVO
+
