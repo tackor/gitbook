@@ -1,18 +1,3 @@
-<head>
-	<style>
-		a {
-			text-decoration:none;
-			color:#005B57
-		}
-		h2 {
-			color:#5BC5C5
-		}
-		body {
-			background:#FDF4DF
-		}
-	</style>
-</head>
-
 # 三种传值
 
 所谓的三种传值问题 指的是iOS类与类制剂的三种传值方式, 这三种方式分别是: `通过代理方式传值`,  `通过Block传值`, `通过通知进行传值`
