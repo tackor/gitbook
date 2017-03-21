@@ -31,4 +31,5 @@
 * [有了自动合成属性实例变量之后, @synthesize 还有哪些使用场景](you-le-zi-dong-he-cheng-shu-xing-shi-li-bian-liang-zhi-540e2c-synthesize-huan-you-na-xie-shi-yong-chang-jing.md)
 * [赋值详解](fu-zhi-xiang-jie.md)
 * [load & initialize 方法](load-and-initialize-fang-fa.md)
+* [KVO 内部实现原理](kvo-nei-bu-shi-xian-yuan-li.md)
 
