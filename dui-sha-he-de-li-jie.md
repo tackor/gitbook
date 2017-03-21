@@ -16,3 +16,15 @@ Library下有两个文件夹，Caches存储应用程序再次启动所需信息�
 Preferences包含应用程序的偏好设置文件，不可在这更改偏设置；
 temp存放临时文件即应用程序再次启动不需要的文件。
 ```
+
+* 获取沙盒根目录的方法，有几种方法：用NSHomeDirectory获取。
+
+* 获取Document路径：
+NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES).
+
+
+<br />
+<br />
+<bt />
+
+
