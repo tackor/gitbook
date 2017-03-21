@@ -33,7 +33,7 @@
 
 实现代码:
 
-```
+```Object-C
 B.H类  类名  name
 ///声明代理方法
 @protocol  nameDelegate <NSObject>
