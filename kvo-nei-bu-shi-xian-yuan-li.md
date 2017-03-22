@@ -10,7 +10,15 @@
 
 * 键值观察通知依赖于NSObject的两个方法: willChangeValueForKey: 和didChangeValueForKey
 
+
 #KVC & KVO 的 keyPath 一定是属性吗?
 
     * 可以是成员变量
     
+
+
+
+
+<br />
+<br />
+<br />
