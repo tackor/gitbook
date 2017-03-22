@@ -35,6 +35,7 @@
 * [OC 中的类相关内容](oc-zhong-de-lei-xiang-guan-nei-rong.md)
 * [内存泄漏](nei-cun-xie-lou.md)
 * [调试相关](diao-shi-xiang-guan.md)
+  * [Xcode 调试方法总结](diao-shi-xiang-guan/xcode-diao-shi-fang-fa-zong-jie.md)
 * [TCP & UDP & HTTP & Socket](tcp-and-udp-and-http-and-socket.md)
 * [重构](zhong-gou.md)
 
