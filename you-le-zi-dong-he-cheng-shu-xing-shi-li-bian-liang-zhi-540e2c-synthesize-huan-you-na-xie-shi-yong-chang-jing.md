@@ -98,7 +98,6 @@
 其实, 发生这种状况根本原因是苹果将默认编译器从GCC转换为LLVM(low level virtual machine)，才不再需要为属性声明实例变量了。
 
 在没有更改之前，属性的正常写法需要三个步骤:
-
     1. 声明成员变量 - 写在 interface的大括号中
     2. @property  - 写在 interface的大括号外部
     3. @synthesize 成员变量
