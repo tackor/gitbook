@@ -105,6 +105,14 @@
 如果我们只写成员变量+ @property:
 
 ```
+@interface GBViewController :UIViewController
+{
+    NSString *myString;
+}
+@property (nonatomic, strong) NSString *myString;
+@end
+```
+Autosynthesized property 'myString' will use synthesized instance variable '_myString', not existing instance variable 'myString'
 
 ```
 
@@ -129,3 +137,10 @@
         2. 使用@synthesize foo = _foo; 关联@property 与 ivar
         
     * 可以用来修改成员变量名, 一般不建议这么做
+    
+    
+  
+  
+<br />
+<br />
+<br />

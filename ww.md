@@ -105,7 +105,12 @@
 如果我们只写成员变量+ @property:
 
 ```
-
+@interface GBViewController :UIViewController
+{
+    NSString *myString;
+}
+@property (nonatomic, strong) NSString *myString;
+@end
 ```
 
 
