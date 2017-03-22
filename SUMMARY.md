@@ -5,7 +5,6 @@
 * [Delegate, Notification, KVO 各自的优缺点](delegate-notification-kvo-ge-zi-de-you-que-dian.md)
 * [事件传递&响应者链条](shi-jian-chuan-901226-xiang-ying-zhe-lian-tiao.md)
 * [iOS图片加载到内存中占用内存情况](iostu-pian-jia-zai-dao-nei-cun-zhong-zhan-yong-nei-cun-qing-kuang.md)
-* [内存泄漏](nei-cun-xie-lou.md)
 * [Assets.xcassets & 直接用图片 区别](assetsxcassets-he-zhi-jie-yong-tu-pian-you-shi-yao-bu-yi-yang.md)
 * [\#include & \#import & @class](include4e0e23-import-de-qu-bie-300123-import-4e0e-class-de-qu-bie.md)
 * [isMemberOfClass & isKindOfClass 区别](ismemberofclass-and-iskindofclass-qu-bie.md)
@@ -22,9 +21,7 @@
 * [UIImageView添加圆角](uiimageviewtian-jia-yuan-jiao.md)
 * [NSMutableArray  &  NSArray](shi-yao-shi-hou-shi-yong-nsmutablearray-ff0c-shi-yao-shi-hou-shi-yong-nsarray.md)
 * [谓词](wei-ci.md)
-* 多线程
 * [属性readwrite，readonly，assign，retain，copy，nonatomic 各是什么作用，在那种情况下用?](shu-xing-readwrite-readonly-assign-retain-copy-nonatomic-ge-shi-shi-yao-zuo-yong-ff0c-zai-na-zhong-qing-kuang-xia-75283f.md)
-* [ARC下会存在内存泄漏吗?](arcxia-hui-cun-zai-nei-cun-xie-lou-54173f.md)
 * [什么情况下使用weak关键字, 相比于assign有什么不同](shi-yao-qing-kuang-xia-shi-yong-weak-guan-jian-5b572c-xiang-bi-yu-assign-you-shi-yao-bu-tong.md)
 * [@property 本质](property-ben-zhi.md)
 * [使用atomic 一定是线程安全的吗?](shi-yong-atomic-yi-ding-shi-xian-cheng-an-quan-de-54173f.md)
@@ -33,7 +30,10 @@
 * [load & initialize 方法](load-and-initialize-fang-fa.md)
 * [SDWebImage框架](sdwebimagekuang-jia.md)
 * [KVO & KVC](kvo-nei-bu-shi-xian-yuan-li.md)
-* 动画
-* runtime
+* [多线程](duo-xian-cheng.md)
+* [动画](dong-hua.md)
+* [runtime](runtime.md)
 * [OC 中的类相关内容](oc-zhong-de-lei-xiang-guan-nei-rong.md)
+* [内存泄漏](nei-cun-xie-lou.md)
+* [调试相关](diao-shi-xiang-guan.md)
 
