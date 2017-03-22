@@ -1,6 +1,25 @@
 #1. iOS中成员变量和属性区别
 
+接触iOS的人都知道，@property声明的属性默认会生成一个_类型的成员变量，同时也会生成setter/getter方法。 
+但这只是在iOS5之后，苹果推出的一个新机制。看老代码时，经常看到一个大括号里面定义了成员变量，同时用了@property声明，而且还在@implementation中使用@synthesize方法。 
 
+```
+//
+//  Person.h
+//  Deom01
+//
+//  Created by 时空矩人 on 2017/3/22.
+//  Copyright © 2017年 时空矩人. All rights reserved.
+//
+```
+
+#import <Foundation/Foundation.h>
+
+@interface Person : NSObject
+
+@end
+
+```
 
 
 
