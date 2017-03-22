@@ -9,3 +9,8 @@
 * 每个类对象中都有一个isa指针指向当前类, 当一个类对象的第一次被观察, 那么系统会头条将isa指针指向当前类, 当一个类对象的第一次被观察, 那么系统会偷偷将isa指针指向动态生成的派生类, 从而在给被监控属性赋值时指向的是派生类的setter方法
 
 * 键值观察通知依赖于NSObject的两个方法: willChangeValueForKey: 和didChangeValueForKey
+
+#KVC & KVO 的 keyPath 一定是属性吗?
+
+    * 可以是成员变量
+    
