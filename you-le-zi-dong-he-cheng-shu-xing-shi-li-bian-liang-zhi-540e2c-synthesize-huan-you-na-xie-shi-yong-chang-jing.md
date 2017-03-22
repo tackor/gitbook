@@ -3,6 +3,7 @@
 接触iOS的人都知道，@property声明的属性默认会生成一个_类型的成员变量，同时也会生成setter/getter方法。 
 但这只是在iOS5之后，苹果推出的一个新机制。看老代码时，经常看到一个大括号里面定义了成员变量，同时用了@property声明，而且还在@implementation中使用@synthesize方法。 
 
+// iOS5之后的代码
 ```
 //
 //  Person.h
@@ -45,6 +46,68 @@
 
 ```
 
+//iOS5之前的代码
+```
+//
+//  Person.h
+//  Deom01
+//
+//  Created by 时空矩人 on 2017/3/22.
+//  Copyright © 2017年 时空矩人. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface Person : NSObject
+
+@end
+
+
+//
+//  Person.m
+//  Deom01
+//
+//  Created by 时空矩人 on 2017/3/22.
+//  Copyright © 2017年 时空矩人. All rights reserved.
+//
+
+#import "Person.h"
+
+@interface Person()
+{
+    //1. 声明成员变量
+    NSString *name;
+    int height;
+}
+
+//2. 用@property
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, assign) int height;
+
+@end
+
+@implementation Person
+
+//3. 最好在@implementation中用@synthesize生成get,set方法
+@synthesize name;
+@synthesize height;
+
+@end
+
+```
+其实, 发生这种状况根本原因是苹果将默认编译器从GCC转换为LLVM(low level virtual machine)，才不再需要为属性声明实例变量了。
+
+在没有更改之前，属性的正常写法需要三个步骤:
+
+    1. 声明成员变量 - 写在 interface的大括号中
+    2. @property  - 写在 interface的大括号外部
+    3. @synthesize 成员变量
+    
+如果我们只写成员变量+ @property:
+
+```
+
+```
 
 
 
