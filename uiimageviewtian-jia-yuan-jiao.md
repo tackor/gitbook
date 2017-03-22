@@ -5,7 +5,9 @@
 ```
 imgView.layer.cornerRadius = 10;
 // 这一行代码是很消耗性能的
-imgView.clipsToBounds = YES;
+imgView.layer.masksToBounds = YES;
+
+// 使用该方法会强制Core Animation 提前渲染屏幕的离屏绘制, 而离屏绘制就会给性能带来负面影响, 会出现卡顿
 ```
 
 * 给UIImage添加生成圆角图片的扩展API：这是on-screen-rendering

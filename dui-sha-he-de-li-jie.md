@@ -22,6 +22,19 @@ temp存放临时文件即应用程序再次启动不需要的文件。
 * 获取Document路径：
 NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES).
 
+# 沙盒的目录结构: 各自的应用场景
+
+* Application: 存放程序源文件, 上架前经过数字签名, 上架后不可修改稿
+
+* Documents: 常用目录, iCloud 备份目录, 存放数据
+
+* Library
+
+    * Caches: 存放提交大又不需要备份的数据
+    * Preference: 设置目录, iCloud 会备份设置信息
+
+* tmp: 存放临时文件, 不会备份, 而且这个文件下的数据有可能随时被清除
+
 
 <br />
 <br />
