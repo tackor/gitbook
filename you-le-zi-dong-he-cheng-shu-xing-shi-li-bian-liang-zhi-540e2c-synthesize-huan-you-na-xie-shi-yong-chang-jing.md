@@ -116,6 +116,39 @@ Autosynthesized property 'myString' will use synthesized instance variable '_my
 
 ```
 
+但更换为LLVM之后，编译器在编译过程中发现没有新的实例变量后，就会生成一个下划线开头的实例变量。因此现在我们不必在声明一个实例变量。（注意：==是不必要，不是不可以==） 
+
+当然我们也熟知，@property声明的属性不仅仅默认给我们生成一个_类型的成员变量，同时也会生成setter/getter方法。
+
+在.m文件中，编译器也会自动的生成一个实例变量_myString。那么在.m文件中可以直接的使用_myString实例变量，也可以通过属性self.myString.都是一样的。
+
+注意这里的self.myString其实是调用的myString属性的setter/getter方法。这与C++中点的使用是有区别的，C++中的点可以直接访问成员变量(也就是实例变量)。
+
+例如在OC中有如下代码:
+```
+@interface MyViewController :UIViewController
+{
+    NSString *name;
+}
+@end
+```
+
+在这段代码里面只是声明了一个成员变量，并没有setter/getter方法。所以访问成员变量时，可以直接访问name，也可以像C++一样用self->name来访问，但绝对不能用self.name来访问。
+
+    * 扩展:很多人觉得OC中的点语法比较奇怪，实际是OC设计人员有意为之。
+    
+    * 点表达式(.)看起来与C语言中的结构体访问以及java语言汇总的对象访问有点类似，如果点表达式出现在等号 ＝ 左边，调用该属性名称的setter方法。如果点表达式出现在＝右边，调用该属性名称的getter方法。
+
+    * OC中点表达式(.)其实就是调用对象的setter和getter方法的一种快捷方式，self.myString = @"张三";实际就是[self setmyString:@"张三"];
+
+那么问题来了： 
+我们能否认为新编译器LLVM下的@property == 老编译器GCC的 成员变量+ @property + @synthesize 成员变量呢？
+
+答案是否定的。 
+因为成员变量+ @property + @synthesize 成员变量的形式，编译器不会帮我们生成_成员变量，因此不会操作_成员变量了； 
+同时@synthesize 还有一个作用，可以指定与属性对应的实例变量， 
+例如@synthesize myString = xxx； 
+那么self.myString其实是操作的实例变量xxx，而非_String了。
 
 
 #2. 有了自动合成属性实例变量之后, @synthesize 还有哪些使用场景
