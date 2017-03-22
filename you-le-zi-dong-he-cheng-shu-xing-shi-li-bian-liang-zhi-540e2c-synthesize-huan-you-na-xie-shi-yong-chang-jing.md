@@ -11,11 +11,35 @@
 //  Created by 时空矩人 on 2017/3/22.
 //  Copyright © 2017年 时空矩人. All rights reserved.
 //
-```
 
 #import <Foundation/Foundation.h>
 
 @interface Person : NSObject
+
+@end
+
+
+//
+//  Person.m
+//  Deom01
+//
+//  Created by 时空矩人 on 2017/3/22.
+//  Copyright © 2017年 时空矩人. All rights reserved.
+//
+
+#import "Person.h"
+
+@interface Person()
+
+/** 名字 */
+@property (nonatomic, strong) NSString *name;
+
+/** 高度 */
+@property (nonatomic, assign) int height;
+
+@end
+
+@implementation Person
 
 @end
 
