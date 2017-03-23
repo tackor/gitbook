@@ -80,6 +80,7 @@ NSString *curThreadName = curThread.name;
 ```
 [self performSelectorInBackground:@selector(run) withObject:nil];
 ```
+自动启动, 但是不能获取线程
 
 
 注: 与UI相关的操作需要放在主线程中处理
