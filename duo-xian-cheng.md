@@ -43,10 +43,15 @@ BOOL isMainThread = [current isMainThread];
 
 创建线程,方法一:
 ```
-// 创建线程
+// 1. 创建线程
+/*
+  参数一: 目标对象 self
+  参数二: 要调用的方法的名称 (该方法中的实现将会在子线程中实现)
+  参数三: 被调用方法的参数<最多一个, 如果没有参数 nil>
+ */
 NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run:) object:nil];
 
-// 启动
+// 2. 启动线程
 [thread start];
   
 ```
