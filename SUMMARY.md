@@ -27,7 +27,6 @@
 * [成员变量 & 属性](you-le-zi-dong-he-cheng-shu-xing-shi-li-bian-liang-zhi-540e2c-synthesize-huan-you-na-xie-shi-yong-chang-jing.md)
 * [赋值详解](fu-zhi-xiang-jie.md)
 * [load & initialize 方法](load-and-initialize-fang-fa.md)
-* [SDWebImage框架](sdwebimagekuang-jia.md)
 * [KVO & KVC](kvo-nei-bu-shi-xian-yuan-li.md)
 * [多线程](duo-xian-cheng.md)
 * [动画](dong-hua.md)
@@ -39,4 +38,7 @@
 * [TCP & UDP & HTTP & Socket](tcp-and-udp-and-http-and-socket.md)
 * [重构](zhong-gou.md)
 * [开发中遇到的问题](kai-fa-zhong-yu-dao-de-wen-ti.md)
+* 第三方框架
+  * [SDWebImage](sdwebimage.md)
+* [SDWebImage框架](sdwebimagekuang-jia.md)
 
