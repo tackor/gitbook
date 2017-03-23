@@ -38,6 +38,8 @@
 * [TCP & UDP & HTTP & Socket](tcp-and-udp-and-http-and-socket.md)
 * [重构](zhong-gou.md)
 * [开发中遇到的问题](kai-fa-zhong-yu-dao-de-wen-ti.md)
-* 第三方框架
+* [第三方框架](di-san-fang-kuang-jia.md)
   * [SDWebImage](sdwebimage.md)
+* 基础
+  * Object-c的类可以多重继承么?可以实现多个接口么?Category是什么?重写一个类的方式用继承好还是分类好?为什么?
 
