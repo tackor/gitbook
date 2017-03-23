@@ -19,5 +19,9 @@ NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run:
   
 ```
 
+注: 与UI相关的操作需要放在主线程中处理
+
+
+
 
 
