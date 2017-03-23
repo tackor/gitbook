@@ -32,7 +32,9 @@
 * [动画](dong-hua.md)
 * [runtime](runtime.md)
 * [OC 中的类相关内容](oc-zhong-de-lei-xiang-guan-nei-rong.md)
-* [内存泄漏](nei-cun-xie-lou.md)
+* [内存](nei-cun-xie-lou.md)
+  * [ARC下会存在内存泄漏吗?](nei-cun-xie-lou/arcxia-hui-cun-zai-nei-cun-xie-lou-54173f.md)
+  * [Objective-C如何对内存管理的](nei-cun-xie-lou/objective-cru-he-dui-nei-cun-guan-li-de.md)
 * [调试相关](diao-shi-xiang-guan.md)
   * [Xcode 调试方法总结](diao-shi-xiang-guan/xcode-diao-shi-fang-fa-zong-jie.md)
 * [TCP & UDP & HTTP & Socket](tcp-and-udp-and-http-and-socket.md)
@@ -40,6 +42,7 @@
 * [开发中遇到的问题](kai-fa-zhong-yu-dao-de-wen-ti.md)
 * [第三方框架](di-san-fang-kuang-jia.md)
   * [SDWebImage](sdwebimage.md)
+  * FMDB
 * 基础
   * Object-c的类可以多重继承么?可以实现多个接口么?Category是什么?重写一个类的方式用继承好还是分类好?为什么?
 
