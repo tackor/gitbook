@@ -1,5 +1,8 @@
+# runtime
 
-参考这篇文章[深入理解RunLoop](http://blog.ibireme.com/2015/05/18/runloop/)
+1. runtime 是什么
 
-# 深入理解RunLoop
+2. runtime 有什么用
+
+3. 日常开发中的用处
 
