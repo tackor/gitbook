@@ -41,8 +41,9 @@ NSThread *currentThread = [NSThread currentThread];
 BOOL isMainThread = [current isMainThread];
 ```
 
+创建线程,方法一:
 ```
-// 创建线程 方法1:
+// 创建线程
 NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run:) object:nil];
 
 // 启动
