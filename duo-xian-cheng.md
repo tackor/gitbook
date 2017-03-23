@@ -43,22 +43,53 @@ BOOL isMainThread = [current isMainThread];
 
 创建线程,方法一:
 ```
-// 1. 创建线程
+// 1. 创建线程(用alloc ,init 创建的线程, 默认是处于未启动状态的, 需要手动启动)
 /*
   参数一: 目标对象 self
   参数二: 要调用的方法的名称 (该方法中的实现将会在子线程中实现)
   参数三: 被调用方法的参数<最多一个, 如果没有参数 nil>
  */
-NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run:) object:nil];
+NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
+
+// 设置线程的名称
+thread.name = @"线程A"
+
+// 设置线程的优先级(0 ~ 1) 默认0.5
+thread.threadPriority = 1.0;
 
 // 2. 启动线程
 [thread start];
+
+// 3. 获取当前线程
+NSThread *curThread = [NSThread currentThread];
+
+// 4. 获取当前线程名称
+NSString *curThreadName = curThread.name;
   
 ```
+
+分离出一条新的线程, 方法二:
+```
+[NSThread detachNewThreadSelector:@selector(run:) toTarget:self withObject: @"这是一条子线程"];
+```
+这种方法可以不需要手动开启子线程, 子线程一创建出来就处于启动状态,
+但是无法获取当前线程
+
+
+开启一条后台线程, 方法三:
+```
+[self performSelectorInBackground:@selector(run) withObject:nil];
+```
+
 
 注: 与UI相关的操作需要放在主线程中处理
 
 
 
+
+
+<br />
+<br />
+<br />
 
 
