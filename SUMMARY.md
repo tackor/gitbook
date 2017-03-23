@@ -38,4 +38,5 @@
   * [Xcode 调试方法总结](diao-shi-xiang-guan/xcode-diao-shi-fang-fa-zong-jie.md)
 * [TCP & UDP & HTTP & Socket](tcp-and-udp-and-http-and-socket.md)
 * [重构](zhong-gou.md)
+* [开发中遇到的问题](kai-fa-zhong-yu-dao-de-wen-ti.md)
 
