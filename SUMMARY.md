@@ -40,5 +40,4 @@
 * [开发中遇到的问题](kai-fa-zhong-yu-dao-de-wen-ti.md)
 * 第三方框架
   * [SDWebImage](sdwebimage.md)
-* [SDWebImage框架](sdwebimagekuang-jia.md)
 
