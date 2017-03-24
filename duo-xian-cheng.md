@@ -72,6 +72,59 @@ NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run)
   
 }
 
+# 线程安全 (使用互斥锁)
+当多个线程使用同一块资源时 需要使用线程锁, 但是给线程是很耗性能的, 加锁的时候, 需要注意加锁的位置
+
+```
+- (void)run {
+  @synchronized(self) {
+    // 需要在子线程中执行的代码
+  }
+}
+```
+
+线程同步, 多线程是并发执行, 通过加锁可以实现多个线程按一定顺序执行. 线程默认是异步执行的
+
+# 原子 & 非原子属性 (atomic & nonatomic)
+
+* 一个属性默认是atomic,
+
+* atomic 原子属性, 会为setter方法加锁(互斥锁), 线程安全, 但是需要消耗大量资源
+
+* nonatomic 非原子属性, 不会为setter方法加锁
+
+iOS开发中
+1. 所有的声明为nonatomic
+2. 尽量避免多线程抢夺同一块资源
+3. 零件将加锁, 资源抢夺d额业务逻辑交给服务器处理.
+
+#线程间通信
+在一个进程中, 往往有多个线程, 多个线程自己需要通信
+比如图片的下载& 显示这个需求, 我们会把图片下载放在子线程中处理, 图片的展示放在UI线程中处理.
+
+```
+[NSThread detachNewThreadSelector:@selector(downImg) toTarget:self withObject: nil];
+
+- (void)downImg {
+
+  // 1. 在子线程中下载图片
+  NSURL *url = [NSURL URLWithString:@"www.badf.sss.jpg"];
+  NSData *imgData = [NSData dataWithContentsOfURL:url];
+  UIImage *img = [UIImage imageWithData:imgData];
+  
+  // 2. 回到主线程中刷新UI
+  [self performSelectorOnMainThread:@selector(showImg:) withObject:img];
+    
+// 也可以用performSelector: onThread: withObject: waitUntilDown:
+  
+}
+
+- (void)showImg:(UIImage *)img {
+{
+  self.imgView.image = img;
+}
+```
+
 
 # NSThread
 NSThread 
@@ -124,13 +177,26 @@ NSString *curThreadName = curThread.name;
 
 开启一条后台线程, 方法三:
 ```
-[self performSelectorInBackground:@selector(run) withObject:nil];
+[self performSelectorInBackground:@selector(run) withObject:nil waitUntillDown:YES];
 ```
 自动启动, 但是不能获取线程
 
 注: 与UI相关的操作需要放在主线程中处理
 
+#GCD
+* 什么是GCD
 
+*任务: 需要执行的操作
+
+*队列: 用来存放任务的, 赋值安排线程来执行任务
+
+###GCD的使用 (2个步骤)
+1. 定制任务: 
+    * 确定要做什么事情
+
+2. 将任务添加到队列中
+    * GCD会自动将队列中的任务取出, 放到对应的线程中执行
+    * 任务的取出遵循队列的FIFO原则, 先进先出
 
 
 
