@@ -45,13 +45,33 @@ NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run)
 
 ![](/assets/Snip20170324_1.png)
 
-### 线程状态
+### 手动设置 线程状态
 
 //1. 新建状态 (new)
 NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
 
 //2. 线程在 就绪状态 与 运行状态之间切换
 [thread start];
+
+- (void)run {
+
+  //3. 阻塞线程
+  [NSThread sleepForTimeInterval:2.0] //阻塞线程, 时间 2s
+  
+  // 也可以用一下方法 阻塞线程
+  [NSThread sleepUntilDate:[NSDate dateWithTimeIntervalSinceNow:3.0];
+  
+  for (int i = 0; i < 100; i++) {
+    if (i == 50) {
+      [NSThread exit];   // 强制退出线程, 一旦线程退出,就不能在使用.
+      
+      // 也可以使用一下的, 退出任务
+      // break;
+    }
+  }
+  
+}
+
 
 # NSThread
 NSThread 
