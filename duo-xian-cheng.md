@@ -26,6 +26,32 @@ NSOperation
   * 使用更加面向对象
   * OC编写的
   * 生命周期自动管理
+  
+# 线程的状态
+
+//1. 新建状态 (new)
+NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
+// 新建状态, 此时 线程被放入`内存`, 但是不是在`可调度线程池`中
+
+//2. 就绪状态 (Runnable)
+[thread start];
+线程被放入到了`可调度线程池里`, 此时CPU调用当前线程以及其他线程, 每个线程都调用一片时间
+
+//3. 阻塞状态 (blocked)
+当我们调用了sleep方法, 或者等待同步锁时, 线程处于阻塞状态时, 线程会被移出可调度线程池, 当等待时间结束之后, 有会被放入可调度线程池继续被CPU调度
+
+//4. 死亡状态
+如果线程任务执行完毕, 或者异常, 强制退出,那么线程会进入死亡状态, 死亡了的线程无法继续使用
+
+![](/assets/Snip20170324_1.png)
+
+### 线程状态
+
+//1. 新建状态 (new)
+NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(run) object:nil];
+
+//2. 线程在 就绪状态 与 运行状态之间切换
+[thread start];
 
 # NSThread
 NSThread 
@@ -81,7 +107,6 @@ NSString *curThreadName = curThread.name;
 [self performSelectorInBackground:@selector(run) withObject:nil];
 ```
 自动启动, 但是不能获取线程
-
 
 注: 与UI相关的操作需要放在主线程中处理
 
