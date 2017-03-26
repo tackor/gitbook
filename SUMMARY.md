@@ -42,7 +42,7 @@
 * [开发中遇到的问题](kai-fa-zhong-yu-dao-de-wen-ti.md)
 * [第三方框架](di-san-fang-kuang-jia.md)
   * [SDWebImage](sdwebimage.md)
-  * FMDB
-* 基础
-  * Object-c的类可以多重继承么?可以实现多个接口么?Category是什么?重写一个类的方式用继承好还是分类好?为什么?
+  * [FMDB](fmdb.md)
+* [基础](ji-chu.md)
+  * [Object-c的类可以多重继承么?可以实现多个接口么?Category是什么?重写一个类的方式用继承好还是分类好?为什么?](ji-chu/object-cde-lei-ke-yi-duo-zhong-ji-cheng-4e483f-ke-yi-shi-xian-duo-ge-jie-kou-4e483f-category-shi-shi-4e483f-zhong-xie-yi-ge-lei-de-fang-shi-yong-ji-cheng-hao-huan-shi-fen-lei-597d3f-wei-shi-4e483f.md)
 
