@@ -1,6 +1,6 @@
 # UITableViewCell上有个UILabel，显示NSTimer实现的秒表时间，手指滚动cell过程中，label是否刷新，为什么？
 
-这是否刷新取决于timer加入到Run Loop中的Mode是什么。Mode主要是用来指定事件在运行循环中的优先级的，分为：
+是否刷新取决于timer加入到Run Loop中的Mode是什么。Mode主要是用来指定事件在运行循环中的优先级的，分为：
 
     * NSDefaultRunLoopMode（kCFRunLoopDefaultMode）：默认，空闲状态
     * UITrackingRunLoopMode：ScrollView滑动时会切换到该Mode
