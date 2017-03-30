@@ -45,6 +45,8 @@ GET提交、请求的数据会附在URL之后，即把数据放置在HTTP协议�
 * HTTPS：安全超文本传输协议（Secure Hypertext Transfer Protocol），它是一个安全通信通道，基于HTTP开发，用于客户计算机和服务器之间交换信息，使用安全套结字层（SSI）进行信息交换，即HTTP的安全版。
 
 
+<a href='http://www.cnblogs.com/hyswa/p/4638974.html'>http://www.cnblogs.com/hyswa/p/4638974.html</a>
+
 
 <br />
 <br />
